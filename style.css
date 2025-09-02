@@ -1,3 +1,7 @@
-p, h1, #login-button, #book-button {
+#login-button, #book-button {
     color: #101C45;
+}
+
+p, h1, button {
+    font-family: "DM Sans";
 }
