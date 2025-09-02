@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holadek - Konsultasi Dokter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <div class="mx-[150px] my-[58px]">
+        <div class="header flex justify-between">
+            <nav class="nav-header flex items-center">
+                <div class="flex gap-[80px]">
+                    <div class="flex gap-1">
+                        <img src="asset/image/holadok-logo.png" alt="" class="logo w-[24px] h-fit">
+                        <h1 class="text-color font-bold">Holadek</h1>
+                    </div>
+                    <ul class="flex gap-[50px] items-center">
+                        <li class="text-color">Home</li>
+                        <li class="text-color">Features</li>
+                        <li class="text-color">Blog</li>
+                        <li class="text-color">About Us</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-button flex gap-2">
+                <button id="login-button" class="px-4 py-2 font-bold rounded">Login</button>
+                <button id="book-button" class="px-4 py-2 font-bold border-black border-2">Book Now</button>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="grid grid-cols-2 grid-rows-1">
+                <div class="w-[457px] h-fit flex flex-col gap-[40px] translate-y-[151px]">
+                    <div class="text-container flex flex-col gap-[15px]">
+                        <h1 class="text-5xl">Get the healthcare you need, when you need it.</h1>
+                        <p>Manage all of your healthcare needs in one convenient place – from booking appointments
+                            to tracking your health history.</p>
+                    </div>
+                    <button class="w-fit px-[35px] py-[15px] text-white bg-[#203271]">Book an Appointment</button>
+                </div>
+                <div class="bg-red-500">
+                    <img src="asset/image/hero-main-model.png" alt="" class="h-[794px]">
+                </div>
+            </div>
+        </div>
+        <div class="benefit-section">
+
+        </div>
+    </div>
 </body>
+
 </html>
