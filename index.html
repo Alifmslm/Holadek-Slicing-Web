@@ -7,11 +7,15 @@
     <title>Holadek - Konsultasi Dokter</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="mx-[150px] my-[58px]">
-        <div class="header flex justify-between">
+    <div class="mx-[150px] my-[58px] relative">
+        <div class="bg-[#9BEAE0] h-[794px] w-[500px] absolute z-0 right-0 -skew-x-5"></div>
+        <div class="header flex justify-between absolute z-1 w-full">
             <nav class="nav-header flex items-center">
                 <div class="flex gap-[80px]">
                     <div class="flex gap-1">
@@ -19,10 +23,10 @@
                         <h1 class="text-color font-bold">Holadek</h1>
                     </div>
                     <ul class="flex gap-[50px] items-center">
-                        <li class="text-color">Home</li>
-                        <li class="text-color">Features</li>
-                        <li class="text-color">Blog</li>
-                        <li class="text-color">About Us</li>
+                        <li class="text-[#101C45]">Home</li>
+                        <li class="text-[#101C45]">Features</li>
+                        <li class="text-[#101C45]">Blog</li>
+                        <li class="text-[#101C45]">About Us</li>
                     </ul>
                 </div>
             </nav>
@@ -33,21 +37,53 @@
         </div>
         <div class="hero">
             <div class="grid grid-cols-2 grid-rows-1">
-                <div class="w-[457px] h-fit flex flex-col gap-[40px] translate-y-[151px]">
+                <div class="w-[425px] h-fit flex flex-col gap-[40px] translate-y-[200px]">
                     <div class="text-container flex flex-col gap-[15px]">
-                        <h1 class="text-5xl">Get the healthcare you need, when you need it.</h1>
-                        <p>Manage all of your healthcare needs in one convenient place – from booking appointments
+                        <h1 class="text-5xl text-[#101C45]">Get the healthcare you need, when you need it.</h1>
+                        <p class="text-[#101C45]">Manage all of your healthcare needs in one convenient place – from booking appointments
                             to tracking your health history.</p>
                     </div>
                     <button class="w-fit px-[35px] py-[15px] text-white bg-[#203271]">Book an Appointment</button>
                 </div>
-                <div class="bg-red-500">
-                    <img src="asset/image/hero-main-model.png" alt="" class="h-[794px]">
+                <div class="relative">
+                    <div class="testi-card absolute top-[123px] -translate-x-[76px] flex flex-col p-[20px] gap-[12px] bg-white w-fit rounded-[10px] shadow-2xl translate-y-[10px]">
+                        <div class="flex justify-between items-center">
+                            <div class="flex gap-[10px] items-center">
+                                <img src="asset/image/chat-model-picture.png" alt="" class="w-[30px] h-[30px]">
+                                <p class="text-[12px] text-[#101C45] font-bold">Jane Doe</p>
+                            </div>
+                            <img src="asset/image/quotes-image.jpg" alt="" class="w-[24px] h-[24px]">
+                        </div>
+                        <p class="w-[252px] text-[12px] [#101C45]">“The doctor appointment app has been great for me. Scheduling appointments and getting medication reminders is much easier, and I love the option for virtual consultations. I'd recommend this app to others.”</p>
+                    </div>
+                    <div class="flex justify-end">
+                        <img src="asset/image/hero-main-model.png" alt="" class="h-[794px]">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="benefit-section">
-
+        <div class="benefit-section grid grid-cols-3 grid-rows-1 bg-[#203271] p-[40px] gap-[32px]">
+            <div class="flex gap-[25px]">
+                <img src="asset/image/calendar-logo.png" alt="" class="w-[40px] h-fit">
+                <div class="flex flex-col gap-[10px]">
+                    <h1 class="text-white font-bold">Online appointment scheduling</h1>
+                    <p class="text-white leading-[26px]">Allows users to schedule appointments with their healthcare provider through the app.</p>
+                </div>
+            </div>
+            <div class="flex gap-[25px]">
+                <img src="asset/image/notification-logo.png" alt="" class="w-[40px] h-fit">
+                <div class="flex flex-col gap-[10px]">
+                    <h1 class="text-white font-bold font-sans">Medication reminders</h1>
+                    <p class="text-white leading-[26px]">Allows users to schedule appointments with their healthcare provider through the app.</p>
+                </div>
+            </div>
+            <div class="flex gap-[25px]">
+                <img src="asset/image/virtual-logo.png" alt="" class="w-[40px] h-fit">
+                <div class="flex flex-col gap-[10px]">
+                    <h1 class="text-white font-bold">Virtual consultations</h1>
+                    <p class="text-white leading-[26px]">Allows users to schedule appointments with their healthcare provider through the app.</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
